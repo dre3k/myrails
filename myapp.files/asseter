@@ -1,0 +1,5 @@
+#!/bin/sh
+
+RAILS_ENV=production rake barista:brew
+compass compile --environment production --quiet --force
+jammit --force

@@ -1,0 +1,2 @@
+Cell::Rails.instance_eval { def hide_action(*args);  end }
+Cell::Rails.send(:include, DecentExposure::DefaultExposure)

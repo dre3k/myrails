@@ -1,0 +1,15 @@
+!!!
+-ie_html :class => 'no-js' do
+  = render 'layouts/head'
+  %body
+    #page
+      %header
+        = render 'layouts/header'
+      %section#flash
+        = render 'layouts/flashes'
+      %section#content
+        = yield
+      %section#sidebar
+        = yield :sidebar
+      %footer
+        = render 'layouts/footer'

@@ -1,0 +1,17 @@
+@import "blueprint/interaction";
+
+#flash_error {
+  @include error;
+}
+
+#flash_notice {
+  @include notice;
+}
+
+#flash_success {
+  @include success;
+}
+
+section#flash > article > p {
+  margin: 0;
+}

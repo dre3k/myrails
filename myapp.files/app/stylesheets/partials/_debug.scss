@@ -1,0 +1,7 @@
+.showgrid {
+  @include show-grid("grid.png");
+}
+
+#page {
+  @extend .showgrid;
+}

@@ -1,0 +1,31 @@
+$content-cols: $total-cols * 0.75;
+$sidebar-cols: $total-cols * 0.25;
+
+#page {
+  @include container;
+
+  header {
+    @include full;
+    @include leader(1);
+    @include trailer(1);
+  }
+
+  section#flashes {
+    @include full;
+  }
+
+  section#content {
+    @include columns($content-cols);
+    @include alpha;
+  }
+
+  section#sidebar {
+    @include columns($sidebar-cols);
+    @include omega;
+  }
+
+  footer {
+    @include full;
+    @include pad(3,3);
+  }
+}

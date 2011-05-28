@@ -1,0 +1,6 @@
+#page > header > h1 {
+  @include full($total-cols);
+  @include adjust-font-size-to($header-font-size);
+  @include leader(0, $header-font-size);
+  @include trailer(0, $header-font-size);
+}

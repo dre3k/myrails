@@ -1,0 +1,13 @@
+javascripts:
+  base:
+    - public/javascripts/vendor/modernizr/*.js
+    - public/javascripts/vendor/jquery/*.js
+    - public/javascripts/vendor/jquery-ujs/*.js
+    - public/javascripts/vendor/jquery-ui/*.js
+    - public/javascripts/compiled/vendor/shuriken/**/*.js
+    - public/javascripts/compiled/application.js
+    - public/javascripts/compiled/application/*.js
+stylesheets:
+  base:
+    - public/stylesheets/vendor/jquery-ui/**/*.css
+    - public/stylesheets/compiled/screen.css

@@ -1,0 +1,64 @@
+source 'http://rubygems.org'
+
+gem 'rails', '>= 3.0.5'
+gem 'sqlite3'
+
+# platforms :mri_19 do
+#   gem "ruby-debug19", :require => 'ruby-debug'
+# end
+
+# for console only
+group :development do
+  gem 'what_methods'
+  gem 'awesome_print'
+  gem 'interactive_editor'
+  gem 'looksee'
+end
+
+gem 'jammit'
+gem 'escape_utils'
+gem 'haml'
+gem 'compass'
+gem 'compass-susy-plugin'
+gem 'therubyracer', :require => false
+gem 'barista'
+gem 'shuriken'
+
+gem 'decent_exposure'
+gem 'meta_where'
+
+# gem 'cells'
+# gem 'apotomo'
+
+# gem 'devise'
+# gem 'hpricot', :group => :development
+# gem 'ruby_parser', :group => :development
+
+group :development do
+  gem 'annotate-models'
+  gem 'haml-rails'
+  gem 'rspec-rails'
+end
+
+group :development, :test do
+  gem 'machinist', '>= 2.0.0.beta2'
+  gem 'forgery'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'cucumber-rails'
+  gem 'spork', '>= 0.9.0.rc4'
+  gem 'autotest-standalone'
+  gem 'autotest-rails-pure'
+  gem 'autotest-notification' #, :git => 'git://github.com/dre3k/autotest-notification.git'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  # gem 'rspec-cells'
+
+  # gem 'capybara-envjs'
+  # platforms :mri_18 do
+  #   gem 'capybara-envjs'
+  # end
+end
